@@ -1,0 +1,30 @@
+/**FILE INPUT**/
+.ws-file-input .button{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.ws-file-input .new-input{
+    float: left;
+    
+}
+
+.ws-file-input .file-trigger{
+    display: block;
+    width:20px;
+    height:20px;
+    overflow:hidden;
+    position:absolute;
+    filter:alpha(opacity=0);
+    opacity: 0;
+    top:0;
+    left:0;
+    cursor:pointer;
+   
+}
+
+.ws-file-input .button .file-trigger input[type="file"]{
+    cursor:pointer;
+}

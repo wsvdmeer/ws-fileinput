@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+		<title>WS-File Input</title>
+    <link rel="stylesheet" type="text/css" href="wsfileinput.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+   
+			<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+      <script type="text/javascript" src="jquery.wsfileinput-1.0.js"></script>
+		
+  </head>
+  <body>
+		<div class="main">
+			
+			
+			<div class="holder">
+				<input class="file-input" name="import" type="file" id="" />
+				<input name="import" type="file" id="test-input" />
+			</div>
+			
+			
+			<div class="info">
+				<h2>Defaults</h2>
+				<ul>
+					<li>value: Browse</li>
+				</ul>
+				<h2>Download</h2>
+				<a href="wsfileinput.zip">download(zip)</a>
+			</div>
+		</div>	
+    <script type="text/javascript">
+        $(".file-input").wsFileInput();
+				$("#test-input").wsFileInput({"value":"Click to browse"});
+				
+				
+    </script>
+  </body>
+</html>
